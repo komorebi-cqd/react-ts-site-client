@@ -1,0 +1,35 @@
+@import url("//at.alicdn.com/t/c/font_3975656_xoymwgjztyg.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hue: 359deg;
+  --satura: 77%;
+  --light: 90%;
+  --title-color: hsl(var(--hue) var(--satura) 77%);
+  --star-color: hsl(var(--hue) var(--satura) 90%);
+  --star-shadow-out: hsl(var(--hue) var(--satura) var(--light) / 70%);
+  --star-shadow-in: hsl(var(--hue) var(--satura) var(--light) / 70%);
+  --sun-color: hsl(var(--hue) var(--satura) var(--light) / 70%);
+  --flow-color: hsl(var(--hue) var(--satura) var(--light) / 70%);
+  --title-shadow: 0 0 1rem var(--star-shadow-in);
+  --brand: hsl(var(--hue) var(--satura) 77%);
+  --color-rgb: 238 77 80;
+  --color-sub-rgb: 251 145 104;
+  --color: rgb(var(--color-rgb));
+  --color-sub: rgb(var(--color-sub-rgb));
+}
+
+:where(.footer-area, .header-area) a{
+  transition: .6s;
+  cursor: pointer;
+  outline: 0;
+  background: linear-gradient(90deg,rgb(var(--color-rgb) / 50%),rgb(var(--color-sub-rgb) / 50%)) no-repeat left 100% / 0 1px;
+}
+
+:where(.footer-area, .header-area) a:hover {
+  background: linear-gradient(90deg,rgb(var(--color-rgb) / 50%),rgb(var(--color-sub-rgb) / 50%)) no-repeat left 100% / 100% 1px;
+  color: rgb(var(--color-rgb) / 80%);
+}
