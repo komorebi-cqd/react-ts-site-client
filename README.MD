@@ -4,12 +4,12 @@
 
 
 ## 前后端分离的个人博客项目
-## client使用技术  地址https://github.com/komorebi-cqd/react-ts-site-client
+## 地址https://github.com/komorebi-cqd/react-ts-site-client ```client```
 - typescript
 - react
 - tailwindcss
 
-## services  
+## 地址：https://github.com/komorebi-cqd/react-ts-site-service ```services``` 
 - typescript
 - express
 - mongdb
